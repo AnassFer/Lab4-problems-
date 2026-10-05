@@ -18,7 +18,11 @@ public record Circle(double radius) {
 
     // Instance method to calculate circumference
     public double circumference() {
+        if (radius < 0) {
+            return -2 * Math.PI * radius;
+        }
         return 2 * Math.PI * radius;
+
     }
 
     public static void main(String[] args) {
