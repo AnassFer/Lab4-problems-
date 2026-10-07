@@ -71,6 +71,7 @@ public class Subject {
                 .append(" ")
                 .append(s.getFirstName())
                 .append(")");
+        return sb.toString();
     }
 
 
